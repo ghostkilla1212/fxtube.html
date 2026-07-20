@@ -1,5 +1,7 @@
 :root {
+  --surface: rgba(255, 255, 255, 0.08);
   --surface-2: rgba(128, 128, 128, 0.568);
+  --surface-3: rgba(255, 255, 255, 0.12);
   --text: yellow;
   --muted: yellow;
   --primary: #ff0000;
@@ -9,6 +11,7 @@
   --radius: 23px;
   --radius-sm: 20px;
   --transition: 0.2s ease;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
 }
 * {
   box-sizing: border-box;
@@ -353,6 +356,134 @@ select {
   color: var(--text);
   font-size: 1rem;
 }
+
+
+
+
+.layout2 {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 24px 24px 40px;
+  min-height: 100vh;
+}
+
+.sidebar2 {
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: center;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.16), rgba(0, 0, 0, 0.95));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 14px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar2 a,
+.sidebar2 p,
+.sidebar2 h1,
+.sidebar2 h2 {
+  display: block;
+  padding: 12px 14px;
+}
+
+.sidebar2 a {
+  color: var(--muted);
+  border-radius: 12px;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.sidebar2 a:hover {
+  background: var(--surface-2);
+  color: var(--text);
+  transform: translateX(3px);
+}
+
+.sidebar2 p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.sidebar2 h1,
+.sidebar2 h3,
+.sidebar2 h2 {
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.studio-main {
+  padding: 8px 0;
+}
+
+.studio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.studio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 260px;
+  padding: 24px;
+  background: linear-gradient(180deg, var(--surface), var(--surface-3));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.studio-card h3 {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.studio-card p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.studio-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: brown;
+  color: yellow;
+  font-weight: 600;
+}
+
+.studio-card-video video {
+  width: 100%;
+  border-radius: 12px;
+  background: black;
+}
+
+@media (max-width: 900px) {
+  .layout2 {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar2 {
+    position: static;
+  }
+
+  .studio-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 .topbar-socal-card {
