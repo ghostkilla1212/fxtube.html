@@ -200,7 +200,6 @@ const anmeldeButton = document.getElementById("anmelde-button");
 const registrierenButton = document.getElementById("registrieren-button");
 const userInfo = document.getElementById("user-info");
 const usernameSpan = document.getElementById("username");
-const logoutButton = document.createElement("button");
 
 anmeldeButton.addEventListener("click", () => {
   const username = prompt("melde dich an:");
@@ -220,7 +219,17 @@ registrierenButton.addEventListener("click", () => {
     anmeldeButton.style.display = "none";
   }
 });
+
+const logoutButton = document.getElementById("logout-button");
+logoutButton.addEventListener("click", logout);
+
+function logout() {
+  usernameSpan.textContent = "logout";
+  userInfo.style.display = "none";
+  anmeldeButton.style.display = "inline-block";
+}
 //login system
+
 
 
 
