@@ -30,7 +30,7 @@ body{
   }
 
 .dark-theme{
-  background-color: blue;
+  background-color: red;
 }
 
 #user-count{
@@ -358,108 +358,6 @@ footer p {
   margin: 8px 0;
 }
 
-.login-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background:
-    radial-gradient(circle at top, rgba(0, 212, 255, 0.12), transparent 14%),
-    var(--bg);
-}
-
-.login-nav {
-  padding: 18px 24px;
-}
-
-.login-card {
-  width: min(460px, 92vw);
-  margin: auto;
-  background: linear-gradient(180deg, brown, black);
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  padding: 32px 26px;
-  box-shadow: var(--shadow);
-}
-
-.login-card h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-group label,
-.login-options,
-.login-footer {
-  color: var(--muted);
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 13px 14px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface-2);
-  color: var(--text);
-  outline: none;
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.form-group input:focus {
-  border-color: var(--primary-2);
-  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.18);
-}
-
-.login-options {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 0.9rem;
-  margin-bottom: 18px;
-}
-
-.remember-me {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.login-card button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #ffffff;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.login-card button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 24px brown;
-}
-
-.login-footer {
-  text-align: center;
-  margin-top: 16px;
-}
-
-.login-footer a,
-.login-options a {
-  color: var(--accent);
-}
 
 .abo-cards-container {
   display: grid;
@@ -1030,13 +928,13 @@ footer p {
 
 .pop-up{
   background-color: red;
-  padding: 80px;
+  padding: 70px;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: scale(1.2);
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: 999px;
   height: 400px;
 }
 
@@ -1059,5 +957,29 @@ color: black;
 padding: 12px;
 border-radius: 11%;
 }
+
+
+
+button{
+  background-color: red;
+  color: yellow;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: brown;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
 
 
