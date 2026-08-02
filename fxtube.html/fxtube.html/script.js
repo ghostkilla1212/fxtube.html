@@ -23,8 +23,8 @@ if (videoButtons.length > 0) {
 
   const videoData = [
     {
-       title: 'fixtube✅',
-      src: 'videos/fixtube vids/Und_mach_jz_wie_orogramierer_a.mp4',
+       title: '👤 usw_doof21',
+      src: 'videos/fixtube vids/5dfde036be5b8276d54793c3fbcdcf15.mp4',
     },
     {
       title: '👤 eric.e3',
@@ -194,63 +194,3 @@ nachOben.addEventListener("click", function () {
   window.scrollTo(0, 0)
 })    
 // sorgt dafür dass mann automatisch ohne zu scrollen nach oben kommt
-
-//login system
-const anmeldeButton = document.getElementById("anmelde-button");
-const registrierenButton = document.getElementById("registrieren-button");
-const userInfo = document.getElementById("user-info");
-const usernameSpan = document.getElementById("username");
-
-anmeldeButton.addEventListener("click", () => {
-  const username = prompt("melde dich an:");
-  if (username) {
-    usernameSpan.textContent = username;
-    userInfo.style.display = "block";
-    anmeldeButton.style.display = "none";
-    document.body.appendChild(logoutButton);
-  }
-});
-
-registrierenButton.addEventListener("click", () => {
-  const username = prompt("zeit sich wieder bei uns zu regestrieren:🥳");
-  if (username) {
-    usernameSpan.textContent = username;
-    userInfo.style.display = "block";
-    anmeldeButton.style.display = "none";
-  }
-});
-
-const logoutButton = document.getElementById("logout-button");
-logoutButton.addEventListener("click", logout);
-
-function logout() {
-  usernameSpan.textContent = "logout";
-  userInfo.style.display = "none";
-  anmeldeButton.style.display = "inline-block";
-}
-//login system
-
-usernameSpan.textContent = "heute schon da";
-document.getElementById("text-ändern").textContent = "fixtube macht süchtig";
-setTimeout(() => {
-  document.getElementById("text-ändern").textContent = "geniesse fixtube";
-  setTimeout(() => {
-    document.getElementById("text-ändern").textContent = "was guckst du so auf fixtube?";
-  }, 5000);
-  setTimeout(() => {
-    document.getElementById("text-ändern").textContent = "du schaust immer noch zeit für eine pause haha";
-  }, 10000);
-  setTimeout(() => {
-    document.getElementById("text-ändern").textContent = "viel spas dir ich höre mal auf dich zu nerven haha";
-  }, 15000);
-}, 5000);
-
-
-
-
-
-
-
-
-
-
