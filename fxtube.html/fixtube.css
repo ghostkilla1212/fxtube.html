@@ -1105,7 +1105,38 @@ button{
 
 
 
+.story-container {
+  display: flex;
+  justify-content: center; /* Zentriert waagerecht (horizontal) */
+  align-items: center;    /* Zentriert senkrecht (vertikal) */
+  height: 10vh;          /* Optional: Nimmt die volle Bildschirmhöhe ein */
+}
 
+.profile-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.profile-logo:hover {
+  animation: profileHoverAnimation 0.4s ease forwards;
+  box-shadow: 0 0 18px rgba(255, 255, 0, 0.6);
+  filter: brightness(1.1);
+}
+
+@keyframes profileHoverAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.12) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(0deg);
+  }
+}
 
 
 

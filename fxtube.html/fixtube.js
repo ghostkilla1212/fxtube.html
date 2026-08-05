@@ -247,6 +247,7 @@ setTimeout(() => {
 }, 5000);
 //text ändern
 
+//sidebar offnen
 function openNav() {
   document.getElementById("mySidenav").classList.add("open");
 }
@@ -254,6 +255,27 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").classList.remove("open");
 }
+//sidebar offnen
+
+
+// 1. Die Container und Elemente greifen
+const container = document.querySelector(".story-container");
+
+// 2. Einen Status für deine User speichern (z.B. als Objekt)
+const userStatus = {
+  babydoll: "grade aktiv",
+  derbeste: "offline",
+  tradingro: "vor 5 Minuten online"
+};
+
+
+
+
+
+
+
+
+
 
 
 
