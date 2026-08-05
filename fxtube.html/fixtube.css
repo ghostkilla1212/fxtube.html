@@ -256,21 +256,36 @@ select {
 
 
 .layout {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 24px;
-  padding: 0 24px 40px;
+  display: block;
+  position: relative;
+  padding: 0 100px 100px;
 }
 
 .sidebar {
-  position: relative;
-  top: 90px;
-  align-self: start;
-  background: linear-gradient(180deg, var(--surface), rgb(0, 0, 0));
-  border: 0px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 12px;
-  height: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  max-width: min(92vw, 320px);
+  min-height: 320px;
+  background: linear-gradient(180deg, var(--surface), rgba(0, 0, 0, 0.96));
+  border: 2px solid var(--border);
+  border-radius: 24px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 20px 60px red;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: width 0.3s ease, padding 0.3s ease, opacity 0.25s ease;
+}
+
+.sidebar.open {
+  width: min(92vw, 320px);
+  padding: 18px 16px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sidebar a,
@@ -307,6 +322,38 @@ select {
   font-size: 1rem;
 }
 
+.closebtn {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.closebtn:hover {
+  opacity: 0.8;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1001;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 10px 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.05);
+}
+
+
 
 .topbar-socal-card {
   align-items: center;
@@ -334,6 +381,80 @@ select {
   border: 1px solid var(--border);
   background: var(--surface-2);
   color: var(--text);
+}
+
+.login-card {
+  max-width: 580px;
+  margin: 0 auto 40px;
+  padding: 34px 32px;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.95), rgba(20, 20, 20, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 32px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+  color: yellow;
+  backdrop-filter: blur(12px);
+}
+
+.login-card h2 {
+  margin-bottom: 24px;
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-card .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-card label {
+  color: #ffeb67;
+  font-size: 0.95rem;
+}
+
+.login-card input,
+.login-card textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: yellow;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card input::placeholder,
+.login-card textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.login-card input:focus,
+.login-card textarea:focus {
+  border-color: rgba(255, 0, 0, 0.8);
+  box-shadow: 0 0 0 6px rgba(255, 0, 0, 0.14);
+}
+
+.login-card button {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(255, 0, 0, 0.25);
 }
 
 footer {
@@ -667,7 +788,7 @@ footer p {
 }
 
 .video-player {
-  width: 100%;
+  width: 250%;
   height: 320px;
   border-radius: 12px;
   background: black;
@@ -677,14 +798,14 @@ footer p {
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 8px;
 }
 
 .video-thumb {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(50, 50, 50, 0.9), rgba(20, 20, 20, 0.95));
-  padding: 8px;
+  padding: 12px;
   text-align: left;
   color: inherit;
   cursor: pointer;
@@ -791,7 +912,7 @@ footer p {
 
 .video-player {
   width: 100%;
-  height: 360px;
+  height: 400px;
   border-radius: 12px;
   background: black;
   outline: none;
@@ -980,6 +1101,12 @@ button{
   padding: 10px;
   margin-top: 5px;
 }
+
+
+
+
+
+
 
 
 

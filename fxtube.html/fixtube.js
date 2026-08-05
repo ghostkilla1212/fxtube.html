@@ -230,6 +230,37 @@ function logout() {
 }
 //login system
 
+//text ändern
+usernameSpan.textContent = "heute schon da";
+document.getElementById("text-ändern").textContent = "fixtube macht süchtig";
+setTimeout(() => {
+  document.getElementById("text-ändern").textContent = "geniesse fixtube";
+  setTimeout(() => {
+    document.getElementById("text-ändern").textContent = "was guckst du so auf fixtube?";
+  }, 5000);
+  setTimeout(() => {
+    document.getElementById("text-ändern").textContent = "du schaust immer noch zeit für eine pause haha";
+  }, 10000);
+  setTimeout(() => {
+    document.getElementById("text-ändern").textContent = "viel spas dir ich höre mal auf dich zu nerven haha";
+  }, 15000);
+}, 5000);
+//text ändern
+
+function openNav() {
+  document.getElementById("mySidenav").classList.add("open");
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").classList.remove("open");
+}
+
+
+
+
+
+
+
 
 
 
