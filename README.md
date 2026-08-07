@@ -39,3 +39,12 @@ und dann kam mir die idee ein youtube clon und ab da haabe ich angefangen
 
 
 
+
+
+<img width="1915" height="998" alt="3" src="https://github.com/user-attachments/assets/c63cab20-8332-461c-aedc-effe201cb3a9" />
+
+
+
+
+
+
