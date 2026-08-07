@@ -21,3 +21,10 @@ und dann kam mir die idee ein youtube clon und ab da haabe ich angefangen
 3 wie mann storys hinzufügt
 
 
+
+
+
+<img width="1919" height="1000" alt="2" src="https://github.com/user-attachments/assets/453bb907-31f4-4ca6-81d5-a5888b3e5328" />
+
+
+
