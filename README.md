@@ -24,7 +24,18 @@ und dann kam mir die idee ein youtube clon und ab da haabe ich angefangen
 
 
 
-<img width="1919" height="1000" alt="2" src="https://github.com/user-attachments/assets/453bb907-31f4-4ca6-81d5-a5888b3e5328" />
+<img width="1907" height="1002" alt="1" src="https://github.com/user-attachments/assets/2e8807e2-dd7f-4d50-8af1-bf0e9e3bb4d5" />
+
+
+
+
+
+
+
+
+<img width="1919" height="1000" alt="2" src="https://github.com/user-attachments/assets/1692fba7-4b36-4ea1-9432-6b40beffd075" />
+
+
 
 
 
