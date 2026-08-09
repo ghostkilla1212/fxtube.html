@@ -192,7 +192,7 @@ top: 20px;
   align-items: center;
   gap: 10px;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 20px;
   border: 2px solid var(--border);
   border-radius: 400px;
@@ -258,20 +258,20 @@ top: 20px;
 
 
 .layout {
-  display: block;
+  display: flex;
   position: relative;
   padding: 0 100px 100px;
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 0;
   max-width: min(92vw, 320px);
   min-height: 320px;
-  background: linear-gradient(180deg, var(--surface), rgba(0, 0, 0, 0.96));
+  background: linear-gradient(180deg, var(--surface), rgb(0, 0, 0));
   border: 2px solid var(--border);
   border-radius: 24px;
   padding: 0;
@@ -1031,7 +1031,7 @@ display: flex;
 
 
 .pop-up {
-    width: 350px;
+    width: 300px;
     padding: 30px;
 
     background: linear-gradient(180deg, brown, black);
@@ -1059,7 +1059,7 @@ display: flex;
   transform: scale(1.2);
   transform: translate(-50%, -50%);
   width: 999px;
-  height: 400px;
+  height: 300px;
 }
 
 #close-button{
@@ -1147,6 +1147,8 @@ button{
   margin: 2%;
   gap: 9px;
 }
+
+
 
 
 
