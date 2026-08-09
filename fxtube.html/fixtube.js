@@ -268,6 +268,77 @@ const userStatus = {
   tradingro: "vor 5 Minuten online"
 };
 
+//category button
+const gamingButton = document.getElementById('gamingButton');
+
+gamingButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const newsButton = document.getElementById('newsButton');
+
+newsButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const lifeButton = document.getElementById('lifeButton');
+
+lifeButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const prankButton = document.getElementById('prankButton');
+
+prankButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const podButton = document.getElementById('podButton');
+
+podButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const reiseButton = document.getElementById('reiseButton');
+
+reiseButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const alleButton = document.getElementById('alleButton');
+
+alleButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+//category button
+
+
+// schliest die topbar socal card
+document.getElementById("schliesen");
+
+schliesen.addEventListener("click", function () {
+const topbarSocalCard = document.querySelector(".topbar-socal-card")
+topbarSocalCard .style.display = "none"
+})
+// schliest die topbar socal card
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -30,7 +30,7 @@ body{
   }
 
 .dark-theme{
-  background-color: red;
+  background-color: white;
 }
 
 #user-count{
@@ -164,9 +164,11 @@ select {
 
 
 .logo {
-  width: 150px;
+  width: 160px;
   height: auto;
   object-fit: contain;
+position: sticky;
+top: 20px;
 }
 
 .logo1{
@@ -882,11 +884,11 @@ footer p {
 }
 
 .video-popup {
-  width: min(92vw, 760px);
+  width: min(92vw, 999px);
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.98), rgba(10, 10, 10, 0.99));
   border: 1px solid red;
-  border-radius: 18px;
-  padding: 16px;
+  border-radius: 30px;
+  padding: 30px;
   position: relative;
   transform: translateY(20px) scale(0.96);
   transition: transform 0.25s ease;
@@ -930,7 +932,7 @@ footer p {
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .topbar .logo {
@@ -938,14 +940,15 @@ footer p {
 }
 
 .main-stage {
-  display: flex;
+display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 30px;
 }
 
 .video-thumb {
@@ -1082,7 +1085,7 @@ border-radius: 11%;
 
 
 button{
-  background-color: red;
+  background-color: rgba(128, 128, 128, 0.226);
   color: yellow;
   padding: 12px 24px;
   border: none;
@@ -1137,6 +1140,15 @@ button{
     transform: scale(1.05) rotate(0deg);
   }
 }
+
+.catigory-button{
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  gap: 9px;
+}
+
+
 
 
 
