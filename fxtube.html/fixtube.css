@@ -192,7 +192,7 @@ top: 20px;
   align-items: center;
   gap: 10px;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 20px;
   border: 2px solid var(--border);
   border-radius: 400px;
@@ -383,80 +383,6 @@ top: 20px;
   border: 1px solid var(--border);
   background: var(--surface-2);
   color: var(--text);
-}
-
-.login-card {
-  max-width: 580px;
-  margin: 0 auto 40px;
-  padding: 34px 32px;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.95), rgba(20, 20, 20, 0.85));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 32px;
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
-  color: yellow;
-  backdrop-filter: blur(12px);
-}
-
-.login-card h2 {
-  margin-bottom: 24px;
-  font-size: 1.7rem;
-  letter-spacing: 0.03em;
-}
-
-.login-card form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.login-card .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.login-card label {
-  color: #ffeb67;
-  font-size: 0.95rem;
-}
-
-.login-card input,
-.login-card textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.05);
-  color: yellow;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.login-card input::placeholder,
-.login-card textarea::placeholder {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.login-card input:focus,
-.login-card textarea:focus {
-  border-color: rgba(255, 0, 0, 0.8);
-  box-shadow: 0 0 0 6px rgba(255, 0, 0, 0.14);
-}
-
-.login-card button {
-  padding: 14px 20px;
-  border-radius: 999px;
-  border: none;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: black;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.login-card button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 16px 30px rgba(255, 0, 0, 0.25);
 }
 
 footer {
@@ -790,7 +716,7 @@ footer p {
 }
 
 .video-player {
-  width: 250%;
+  width: 100%;
   height: 320px;
   border-radius: 12px;
   background: black;
@@ -800,14 +726,14 @@ footer p {
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  gap: 14px;
 }
 
 .video-thumb {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(50, 50, 50, 0.9), rgba(20, 20, 20, 0.95));
-  padding: 12px;
+  padding: 8px;
   text-align: left;
   color: inherit;
   cursor: pointer;
@@ -884,11 +810,11 @@ footer p {
 }
 
 .video-popup {
-  width: min(92vw, 999px);
+  width: min(92vw, 760px);
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.98), rgba(10, 10, 10, 0.99));
   border: 1px solid red;
-  border-radius: 30px;
-  padding: 30px;
+  border-radius: 18px;
+  padding: 16px;
   position: relative;
   transform: translateY(20px) scale(0.96);
   transition: transform 0.25s ease;
@@ -914,7 +840,7 @@ footer p {
 
 .video-player {
   width: 100%;
-  height: 400px;
+  height: 360px;
   border-radius: 12px;
   background: black;
   outline: none;
@@ -932,7 +858,7 @@ footer p {
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .topbar .logo {
@@ -940,15 +866,14 @@ footer p {
 }
 
 .main-stage {
-display: flex;
+  display: flex;
   flex-direction: column;
-  margin-top: 2%;
 }
 
 .video-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 30px;
+  gap: 14px;
 }
 
 .video-thumb {
@@ -1031,7 +956,7 @@ display: flex;
 
 
 .pop-up {
-    width: 300px;
+    width: 350px;
     padding: 30px;
 
     background: linear-gradient(180deg, brown, black);
@@ -1059,7 +984,7 @@ display: flex;
   transform: scale(1.2);
   transform: translate(-50%, -50%);
   width: 999px;
-  height: 300px;
+  height: 400px;
 }
 
 #close-button{
@@ -1085,7 +1010,7 @@ border-radius: 11%;
 
 
 button{
-  background-color: rgba(128, 128, 128, 0.226);
+  background-color: gray;
   color: yellow;
   padding: 12px 24px;
   border: none;
@@ -1147,6 +1072,76 @@ button{
   margin: 2%;
   gap: 9px;
 }
+
+.fixtube-schorts-title{
+  color: yellow;
+  padding: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+    width: 50%;
+    height: auto;
+    border-radius: 100px;
+  margin: auto;
+ border: 2px solid yellow;
+}
+
+
+
+
+.play-games-button {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.play-button {
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    overflow: hidden;
+    background: none;
+    cursor: pointer;
+}
+
+.play-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.andere-seite-weiterleiten{
+   display: flex;
+  justify-content: center;
+  margin: 2%;
+  gap: 9px;
+}
+
+.zuruck-zu-fixtube{
+   display: flex;
+  justify-content: center;
+  margin: 2%;
+  gap: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

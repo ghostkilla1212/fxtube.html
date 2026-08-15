@@ -329,6 +329,83 @@ topbarSocalCard .style.display = "none"
 })
 // schliest die topbar socal card
 
+//button der dich zu einer anderen seite bringt von fixtube
+const ersterButton = document.getElementById('ersterButton');
+
+ersterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const zweiterButton = document.getElementById('zweiterButton');
+
+zweiterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const dritterButton = document.getElementById('dritterButton');
+
+dritterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const vierterButton = document.getElementById('vierterButton');
+
+vierterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const funfterButton = document.getElementById('funfterButton');
+
+funfterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const sechterButton = document.getElementById('sechterButton');
+
+sechterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const siebterButton = document.getElementById('siebterButton');
+
+siebterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const achterButton = document.getElementById('achterButton');
+
+achterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const letzterButton = document.getElementById('letzterButton');
+
+letzterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+//button der dich zu einer anderen seite bringt von fixtube
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
