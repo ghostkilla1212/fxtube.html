@@ -30,7 +30,7 @@ body{
   }
 
 .dark-theme{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.452);
 }
 
 #user-count{
@@ -1129,6 +1129,31 @@ button{
   justify-content: center;
   margin: 2%;
   gap: 9px;
+}
+
+
+.fixtube-app{
+  font-size: 200%;
+  color: yellow;
+  margin-top: 309px;
+  padding: 1%;
+}
+
+p{
+  font-size: larger;
+padding: 1%;
+color: rgba(255, 255, 0, 0.568);
+}
+
+.android-vs-ios{
+  padding: 1%;
+}
+
+.fixtube-app-img{
+ top: 25%;
+ width: 26%;
+right: 1%;
+position: absolute;
 }
 
 
