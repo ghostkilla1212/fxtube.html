@@ -184,7 +184,7 @@ top: 20px;
   height: auto;
   object-fit: contain;
 }
-  
+
 .search-bar {
   position: relative;
   background: rgba(128, 128, 128, 0.377);
@@ -697,7 +697,7 @@ footer p {
   background: linear-gradient(180deg, rgba(40, 40, 40, 0.95), rgba(15, 15, 15, 0.98));
   border: 1px solid red;
   border-radius: 18px;
-  padding: 14px;
+  padding: 12px;
 }
 
 .player-header {
@@ -733,7 +733,7 @@ footer p {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(50, 50, 50, 0.9), rgba(20, 20, 20, 0.95));
-  padding: 8px;
+  padding: 12px;
   text-align: left;
   color: inherit;
   cursor: pointer;
@@ -749,8 +749,8 @@ footer p {
   width: 100%;
   height: 110px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 8px;
+  border-radius: 10px;
+  margin-bottom: 19px;
 }
 
 .thumb-text {
@@ -785,7 +785,7 @@ footer p {
   }
 
   .video-popup {
-    width: min(94vw, 560px);
+    width: min(94vw, 568px);
     padding: 14px;
   }
 }
@@ -871,7 +871,7 @@ footer p {
 }
 
 .video-grid {
-  display: grid;
+display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
@@ -1018,6 +1018,16 @@ button{
   cursor: pointer;
 }
 
+button2{
+  background-color: black;
+  color: yellow;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
 .user-info {
   display: none;
   position: absolute;
@@ -1029,8 +1039,6 @@ button{
   padding: 10px;
   margin-top: 5px;
 }
-
-
 
 
 .story-container {
@@ -1072,25 +1080,6 @@ button{
   margin: 2%;
   gap: 9px;
 }
-
-.fixtube-schorts-title{
-  color: yellow;
-  padding: 30px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.gallery img {
-    width: 50%;
-    height: auto;
-    border-radius: 100px;
-  margin: auto;
- border: 2px solid yellow;
-}
-
 
 
 
@@ -1154,6 +1143,20 @@ color: rgba(255, 255, 0, 0.568);
  width: 26%;
 right: 1%;
 position: absolute;
+}
+
+
+.icon-button{
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mini-button {
+    position: relative;
 }
 
 

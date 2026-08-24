@@ -396,48 +396,6 @@ letzterButton.addEventListener('click', function() {
 //button der dich zu einer anderen seite bringt von fixtube
 
 
-const androidButton = document.getElementById('androidButton');
-
-androidButton.addEventListener('click', function() {
-  window.open('https://play.google.com/store/games?hl=en', '_blank');
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
