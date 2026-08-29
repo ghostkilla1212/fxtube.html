@@ -265,8 +265,7 @@ top: 20px;
 
 .sidebar {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  left: 90%;
   transform: translate(-50%, -50%);
   width: 0;
   max-width: min(92vw, 320px);
@@ -1159,7 +1158,11 @@ position: absolute;
     position: relative;
 }
 
-
+#sendButton {
+  color: yellow;
+  background-color: gray;
+  border-radius: 20%;
+}
 
 
 

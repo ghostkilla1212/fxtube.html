@@ -396,6 +396,13 @@ letzterButton.addEventListener('click', function() {
 //button der dich zu einer anderen seite bringt von fixtube
 
 
+const sendButton = document.getElementById("sendButton");
+
+sendButton.addEventListener("click", function() {
+  alert("support wurde kontaktiert")
+})
+
+
 
 
 
