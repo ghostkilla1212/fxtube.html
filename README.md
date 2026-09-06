@@ -62,14 +62,17 @@ This project is **not affiliated with or owned by YouTube**.
 
 More features and improvements may come in the future. 🚀
 
-#⚠️ IMPORTANT — Privacy & Data
+⚠️ IMPORTANT — PRIVACY & DATA
 
-Fixtube does NOT store your data. 🔒
+🔒 Fixtube does NOT store your data
 
 Everything in Fixtube is virtual and only for demonstration/testing purposes.
+
 Your login information, account data and other entered information are not stored.
 
 🎥 Fixtube is only for watching and exploring the available content.
+
+
 
 
 
