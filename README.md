@@ -62,7 +62,7 @@ This project is **not affiliated with or owned by YouTube**.
 
 More features and improvements may come in the future. 🚀
 
-⚠️ IMPORTANT — Privacy & Data
+#⚠️ IMPORTANT — Privacy & Data
 
 Fixtube does NOT store your data. 🔒
 
