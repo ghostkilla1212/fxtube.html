@@ -72,6 +72,15 @@ Your login information, account data and other entered information are not store
 
 🎥 Fixtube is only for watching and exploring the available content.
 
+<img width="1919" height="991" alt="Screenshot 2026-09-06 144801" src="https://github.com/user-attachments/assets/5f7e044f-8cbd-402a-959f-adfc61a005b4" />
+
+<img width="1919" height="988" alt="Screenshot 2026-09-06 144820" src="https://github.com/user-attachments/assets/9ad639b5-de1b-4fb5-bfb9-b9b00c92f487" />
+
+<img width="1404" height="748" alt="Screenshot 2026-09-06 144841" src="https://github.com/user-attachments/assets/0940bb25-5a55-4be1-a201-6b8bdd24e09e" />
+
+
+
+
 
 
 
