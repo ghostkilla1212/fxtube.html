@@ -5,10 +5,10 @@ if (videoButtons.length > 0) {
   overlay.className = 'video-overlay';
   overlay.innerHTML = `
     <div class="video-popup">
-      <button class="video-close" type="button" aria-label="Schließen">×</button>
+      <button class="video-close" type="button" aria-label="Close">×</button>
       <div class="player-header">
         <h2 id="playerTitle">Video</h2>
-        <p id="playerInfo">Klicke auf ein Video, um es direkt abzuspielen.</p>
+        <p id="playerInfo">Click a video to play it directly.</p>
       </div>
       <video id="videoPlayer" class="video-player" controls playsinline preload="metadata"></video>
     </div>
@@ -25,10 +25,6 @@ if (videoButtons.length > 0) {
     {
        title: 'fixtube✅',
       src: 'videos/fixtube vids/Und_mach_jz_wie_orogramierer_a.mp4',
-    },
-    {
-      title: '👤 eric.e3',
-      src: 'videos/fixtube vids/9eb41565a11af335568dae0cd1494bae.mp4',
     },
     {
       title: '👤 ronaldo_fan099',
@@ -67,7 +63,7 @@ if (videoButtons.length > 0) {
       src: 'videos/fixtube vids/4a9f4083176f30d05a993454d1b1daf5.mp4',
     },
     {
-      title:  '👤 leoo ist fett55',
+      title:  '👤 leoo is fat55',
       src: 'videos/fixtube vids/68db5f045f8d4bf4c9744d1c7f98f750.mp4',
     }
   ];
@@ -103,54 +99,54 @@ if (videoButtons.length > 0) {
     });
   });
 }
-//viedeo player
+// Video player
 
-// das ist für farben wecheln
+// Theme switcher
 const button = document.getElementById('theme-toggle');
 
-button.addEventListener('click', () => {
+  button.addEventListener('click', () => {
 document.body.classList.toggle('dark-theme')
 })
-// das ist für farben wecheln
+// Theme switcher
 
-// user zahlen hoch runter
+// Active user count
 const span = document.getElementById('user-count');
 
 let aktuelleUser = 4000000;
 
-setInterval(() => {
+  setInterval(() => {
   let change = Math.floor(Math.random() * 10.000) -2000;
 
 
   aktuelleUser = aktuelleUser + change;
   span.innerText = aktuelleUser;
 }, 3000)
-//user zahlen hoch runter
+// Active user count
 
-// pop up für news
+// News pop-up
 const popup = document.querySelector(".pop-up");
 
 const closeButton = document. querySelector("#close-button");
 
-closeButton.addEventListener("click", function () {
-popup.style.display = "none";
-});
-// pop up für news
+  closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
+// News pop-up
 
 const searchInput = document.getElementById("siteSearch") || document.getElementById("streamSearch");
 const suggestionsBox = document.getElementById("search-suggestions");
 
 if (searchInput && suggestionsBox) {
   const searchTopics = [
-    "trump rastet aus",
-    "mein video",
+    "Trump loses it",
+    "My video",
     "spiderman edit",
     "call of duty gameplay",
-    "ronaldo ist der goat",
+    "Ronaldo is the GOAT",
     "fortnite zocken live",
     "live at tokio",
     "musik livestream",
-    "bär gefilmt",
+    "filmed a bear",
     "ai videos"
   ];
 
@@ -186,23 +182,24 @@ if (searchInput && suggestionsBox) {
   });
 }
 
-// sorgt dafür dass mann automatisch ohne zu scrollen nach oben kommt
+// Scroll to the top of the page
 const nachOben = document.getElementById("nach-oben-button")
 
-nachOben.addEventListener("click", function () {
+if (nachOben) {
+  nachOben.addEventListener("click", function () {
+    window.scrollTo(0, 0)
+  })
+}
+// Scroll to the top of the page
 
-  window.scrollTo(0, 0)
-})    
-// sorgt dafür dass mann automatisch ohne zu scrollen nach oben kommt
-
-//login system
+// Sign-in system
 const anmeldeButton = document.getElementById("anmelde-button");
 const registrierenButton = document.getElementById("registrieren-button");
 const userInfo = document.getElementById("user-info");
 const usernameSpan = document.getElementById("username");
 
 anmeldeButton.addEventListener("click", () => {
-  const username = prompt("melde dich an:");
+  const username = prompt("Sign in:");
   if (username) {
     usernameSpan.textContent = username;
     userInfo.style.display = "block";
@@ -212,7 +209,7 @@ anmeldeButton.addEventListener("click", () => {
 });
 
 registrierenButton.addEventListener("click", () => {
-  const username = prompt("zeit sich wieder bei uns zu regestrieren:🥳");
+  const username = prompt("Time to register with us:🥳");
   if (username) {
     usernameSpan.textContent = username;
     userInfo.style.display = "block";
@@ -221,14 +218,235 @@ registrierenButton.addEventListener("click", () => {
 });
 
 const logoutButton = document.getElementById("logout-button");
-logoutButton.addEventListener("click", logout);
+  logoutButton.addEventListener("click", logout);
 
 function logout() {
-  usernameSpan.textContent = "logout";
-  userInfo.style.display = "none";
-  anmeldeButton.style.display = "inline-block";
+  usernameSpan.textContent = "Signed out";
+    userInfo.style.display = "none";
+    anmeldeButton.style.display = "inline-block";
+  }
+// Sign-in system
+
+// Sidebar message rotation
+usernameSpan.textContent = "here today";
+document.getElementById("text-message").textContent = "FxTube is addictive";
+setTimeout(() => {
+  document.getElementById("text-message").textContent = "Enjoy FxTube";
+  setTimeout(() => {
+    document.getElementById("text-message").textContent = "What are you watching on FxTube?";
+  }, 5000);
+  setTimeout(() => {
+    document.getElementById("text-message").textContent = "Still watching? Time for a break, haha";
+  }, 10000);
+  setTimeout(() => {
+    document.getElementById("text-message").textContent = "Have fun, I will stop bothering you now, haha";
+  }, 15000);
+}, 5000);
+// Sidebar message rotation
+
+// Sidebar navigation
+const sidebar = document.getElementById("mySidenav");
+const openSidebarButton = document.querySelector('[data-action="open-sidebar"]');
+const closeSidebarButton = document.querySelector('[data-action="close-sidebar"]');
+const navigationLinks = document.querySelectorAll("[data-link]");
+const shopLink = document.querySelector('[data-action="show-shop"]');
+
+function navigateTo(target) {
+  window.location.assign(target);
 }
-//login system
+
+function activateOnEnter(element, action) {
+  element.addEventListener("click", action);
+  element.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+
+    event.preventDefault();
+    action();
+  });
+}
+
+function openNav() {
+  sidebar.classList.add("open");
+}
+
+function closeNav() {
+  sidebar.classList.remove("open");
+}
+
+openSidebarButton.addEventListener("click", openNav);
+activateOnEnter(closeSidebarButton, closeNav);
+
+navigationLinks.forEach((link) => {
+  activateOnEnter(link, () => {
+    navigateTo(link.dataset.link);
+  });
+});
+
+activateOnEnter(shopLink, () => {
+  alert("The FxTube Shop is not available yet.");
+});
+
+
+// Story container
+const container = document.querySelector(".story-container");
+
+// Store sample user statuses
+const userStatus = {
+  babydoll: "active now",
+  derbeste: "offline",
+  tradingro: "online 5 minutes ago"
+};
+
+// Category buttons
+const gamingButton = document.getElementById('gamingButton');
+
+gamingButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const newsButton = document.getElementById('newsButton');
+
+newsButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const lifeButton = document.getElementById('lifeButton');
+
+lifeButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const prankButton = document.getElementById('prankButton');
+
+prankButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const podButton = document.getElementById('podButton');
+
+podButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const reiseButton = document.getElementById('reiseButton');
+
+reiseButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+
+const alleButton = document.getElementById('alleButton');
+
+alleButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/fixtube.html', '_blank');
+
+});
+// Category buttons
+
+
+// Close the social card
+document.getElementById("schliesen");
+
+  schliesen.addEventListener("click", function () {
+const topbarSocalCard = document.querySelector(".topbar-socal-card")
+topbarSocalCard .style.display = "none"
+})
+// Close the social card
+
+// Page navigation buttons
+const ersterButton = document.getElementById('ersterButton');
+
+ersterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const zweiterButton = document.getElementById('zweiterButton');
+
+zweiterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const dritterButton = document.getElementById('dritterButton');
+
+dritterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const vierterButton = document.getElementById('vierterButton');
+
+vierterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const funfterButton = document.getElementById('funfterButton');
+
+funfterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const sechterButton = document.getElementById('sechterButton');
+
+sechterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const siebterButton = document.getElementById('siebterButton');
+
+siebterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const achterButton = document.getElementById('achterButton');
+
+achterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+const letzterButton = document.getElementById('letzterButton');
+
+letzterButton.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+// Page navigation buttons
+
+// Support report button
+const sendButton = document.getElementById("sendButton");
+
+  sendButton.addEventListener("click", function() {
+  alert("Support has been contacted")
+})
+// Support report button
+
+const aboutMe = document.getElementById('aboutMe');
+
+  aboutMe.addEventListener('click', function() {
+  window.open('http://127.0.0.1:5501/erster%20button%20seite.html', '_blank');
+
+});
+
+
+
+
+
+
+
+
+
 
 
 
